@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
-int v[] = {10,9,8,7,6,5,4,3,2,1};
-int n = sizeof(v);
+// int v[] = {10,9,8,7,6,5,4,3,2,1};
+// int n = sizeof(v);
 
 
 void swap(int *a, int *b)
