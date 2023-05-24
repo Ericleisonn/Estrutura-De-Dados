@@ -36,6 +36,7 @@ int main(int argc, char **argv)
     n = atoi(argv[1]);
     v = (int *)malloc(n * sizeof(int));
     srand(time(NULL));
+    //SELECTION
     for (i = 0; i < n; i++)
         v[i] = rand();
 
