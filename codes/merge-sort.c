@@ -7,10 +7,10 @@ void merge(int arr[], int s, int m, int e)
     unsigned int p,q;
 	p = s;
     q = m + 1;
-	int *w = (int *)malloc((e - s + 1) * sizeof(int));
-	for (int i = 0; i < (e - s + 1); i++)
+	int *w = (int *)malloc((e-s+1) * sizeof(int));
+	for (int i = 0; i < (e-s+1); i++)
 	{
-		if ((q > e) || ((p <= m) && (arr[p] < arr[q])))
+		if ((q>e) || ((p <= m) && (arr[p] < arr[q])))
 		{
 			w[i] = arr[p];
 			p= p+1;
@@ -22,9 +22,9 @@ void merge(int arr[], int s, int m, int e)
 		}
 	}
 
-	for (int j = 0; j < (e - s + 1); j++)
+	for (int j = 0; j < (e-s+1); j++)
 	{
-		arr[s + j] = w[j];
+		arr[s+j] = w[j];
 	}
 	free(w);
 }
