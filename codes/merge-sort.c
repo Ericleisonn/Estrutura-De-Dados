@@ -53,7 +53,7 @@ int main(int argc, char **argv)
 	for (i = 0; i < n; i++)
 		vetor[i] = rand() % n;
 	clock_gettime(CLOCK_MONOTONIC, &b);
-	mergeSort(vetor, 0, n - 1);
+	merge_sort(vetor, 0, n - 1);
 	clock_gettime(CLOCK_MONOTONIC, &a);
 	t = (a.tv_sec * 1e9 + a.tv_nsec) - (b.tv_sec * 1e9 + b.tv_nsec);
 	printf("%u\n", t);
